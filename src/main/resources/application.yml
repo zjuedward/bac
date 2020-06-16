@@ -20,4 +20,5 @@ spring:
     request-context-attribute: request
     template-loader-path: classpath:/templates
 
+
 debug: false
