@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>中心动态</title>
+    <#include "/header.html">
+
+</head>
+
+<#include "/top.html">
+
+<body>
+
+
+<!--<div class="swimlane" style="background-color: #f3f4fa;">
+    <div class="container">
+
+        <div class="card mb-5" style="width: 100%;">
+            <div class="card-header">
+                中心简报
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item" style="cursor: pointer;" id="one">2020年第1期平衡中心简报<span class="float-right">2020年1月31日</span></li>
+                <li class="list-group-item" style="cursor: pointer;" id="two">2020年第2期平衡中心简报<span class="float-right">2020年2月29日</span></li>
+                <li class="list-group-item" style="cursor: pointer;" id="three">2020年第3期平衡中心简报<span class="float-right">2020年3月31日</span></li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>-->
+
+
+<!-- ##############################中心动态#################################-->
+<div class="container-fluid swimlane">
+    <div class="container">
+        <h4 class="text-black mt-0 font-weight-bold">中心动态<span class="text-muted ml-4">Center Trends</span></h4>
+        <hr align="left" class="divider my-4" style="border-color: #000000;">
+        <div id="" class="container m-0 p-0">
+            <div class="album py-1 bg-light">
+                <div class="">
+
+                    <div class="card mb-5" style="width: 100%;">
+                        <!--<div class="card-header">
+                        </div>-->
+                        <ul class="list-group list-group-flush text-left">
+                            <li class="list-group-item" style="cursor: pointer;" id="one">2020年第1期平衡中心简报<span class="float-right">2020年1月31日</span></li>
+                            <li class="list-group-item" style="cursor: pointer;" id="two">2020年第2期平衡中心简报<span class="float-right">2020年2月29日</span></li>
+                            <li class="list-group-item" style="cursor: pointer;" id="three">2020年第3期平衡中心简报<span class="float-right">2020年3月31日</span></li>
+                            <li class="list-group-item" id="four"><a href="news_detail.html" style="color: black;">浙江大学平衡建筑研究中心成立<span class="float-right">2020年4月27日</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</div>
+
+
+<#include "/bottom.html">
+
+<#include "/footer.html">
+
+<script>
+    $(function () {
+
+        $("#one").click(function () {
+            let pdf = '${request.contextPath}/static/myfiles/2020年第1期平衡中心简报WJ.pdf';
+            window.open('${request.contextPath}/static/plugins/pdf/web/viewer.html?file=' + pdf, 'PDF');
+        });
+
+        $("#two").click(function () {
+            let pdf = '${request.contextPath}/static/myfiles/2020年第2期平衡中心简报WJ.pdf';
+            window.open('${request.contextPath}/static/plugins/pdf/web/viewer.html?file=' + pdf, 'PDF');
+        });
+
+        $("#three").click(function () {
+            let pdf = '${request.contextPath}/static/myfiles/2020年第3期平衡中心简报WJ.pdf';
+            window.open('${request.contextPath}/static/plugins/pdf/web/viewer.html?file=' + pdf, 'PDF');
+        });
+
+    });
+</script>
+
+</body>
+</html>

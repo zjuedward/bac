@@ -1,0 +1,104 @@
+<style>
+    .site-header {
+        background-color: rgba(0, 0, 0, .85);
+        -webkit-backdrop-filter: saturate(180%) blur(20px);
+        backdrop-filter: saturate(180%) blur(20px);
+    }
+
+    .site-header a {
+        color: #fff;
+        transition: ease-in-out color .15s;
+    }
+
+    .site-header a:hover {
+        color: #c2c2c2;
+        text-decoration: none;
+    }
+
+    .dropdown:hover>.dropdown-menu {
+        display: block;
+    }
+
+    .dropdown>.dropdown-toggle:active {
+        pointer-events: none;
+    }
+
+    .dropdown-item {
+        font-size: 13px;
+    }
+</style>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+    <a class="navbar-brand" href="#">
+        <img src="${request.contextPath}/static/image/logo.png" class="img-fluid ml-1">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse ml-5" id="navbarsExample05">
+        <ul class="navbar-nav float-right">
+            <li class="nav-item active ml-5">
+                <a class="nav-link" href="index.html">首页</a>
+            </li>
+            <li class="nav-item active ml-5">
+                <a class="nav-link" href="research_center.html">研究中心</a>
+            </li>
+            <li class="nav-item active ml-5 dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="kygl" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    科研管理
+                </a>
+                <div class="dropdown-menu mt-0" aria-labelledby="kygl">
+                    <a class="dropdown-item" href="#">科研制度</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">公示公告</a>
+                </div>
+            </li>
+            <li class="nav-item active ml-5">
+                <a class="nav-link" href="#">研究成果</a>
+            </li>
+            <li class="nav-item active ml-5">
+                <a class="nav-link" href="trends.html">中心动态</a>
+            </li>
+            <li class="nav-item active ml-5 dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="zszp" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    招生招聘
+                </a>
+                <div class="dropdown-menu mt-0" aria-labelledby="zszp">
+                    <a class="dropdown-item" href="employ.html">招生</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="http://employ.zuadr.com">招聘</a>
+                </div>
+            </li>
+            <li class="nav-item active ml-5">
+                <a class="nav-link" href="aboutus.html">关于我们</a>
+            </li>
+            <li class="nav-item active ml-5">
+                <a class="nav-link" href="#">中文 / English</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+<!--sticky-top
+<nav class="site-header p-4" style="font-size: 17px;">
+    <div class="container-fluid d-flex flex-column flex-md-row justify-content-between" style="width: 80%;">
+        <a class="py-2 navbar-brand" href="#" aria-label="Product">
+
+            <img src="image/logo.png" class="img-fluid">
+
+        </a>
+        <a class="py-4 d-none d-md-inline-block" href="index.html">首页</a>
+        <a class="py-4 d-none d-md-inline-block" href="#">研究中心</a>
+        <a class="py-4 d-none d-md-inline-block" href="#">科研管理</a>
+        <a class="py-4 d-none d-md-inline-block" href="#">研究成果</a>
+        <a class="py-4 d-none d-md-inline-block" href="trends.html">中心动态</a>
+        <a class="py-4 d-none d-md-inline-block" href="employ.html">招生招聘</a>
+        <a class="py-4 d-none d-md-inline-block" href="aboutus.html">关于我们</a>
+        <a class="py-4 d-none d-md-inline-block" href="#">中文 / English</a>
+    </div>
+</nav>-->

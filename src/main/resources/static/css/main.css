@@ -1,0 +1,50 @@
+body, html,#allmap {
+    margin:0;
+    padding:0;
+    font-family:"微软雅黑";
+}
+
+hr.divider {
+    max-width: 3.25rem;
+    border-width: .2rem;
+    text-align: left;
+}
+
+
+.custom .nav-item {
+    border: none;
+}
+
+.custom .active {
+    border-radius: 0!important; /*删除圆角效果*/
+    background: #d2d0d6 !important;  /*设置背景色*/
+}
+
+.custom .nav-link {
+    color: dimgray;
+}
+
+.swimlane {
+    padding: 6rem 0 6rem;
+    min-height: 30rem;
+    position: relative;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#footer_menu li {
+    padding-top: 0.5em!important;
+    padding-bottom: 0.5em!important;
+}
+
+#footer_menu p {
+    font-size: 20px;
+}

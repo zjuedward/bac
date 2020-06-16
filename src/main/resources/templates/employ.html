@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>招生招聘</title>
+    <#include "/header.html">
+
+    <style>
+        #bonusInfo p {
+            text-indent: 2em;
+            line-height: 2em;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<#include "/top.html">
+
+<div class="swimlane" style="background-color: #f3f4fa;" id="bonusInfo">
+    <div class="container">
+        <h3 align="center">
+            研究生教学管理和奖励方案简介
+        </h3>
+
+        <br>
+        <p>为了落实浙江大学平衡建筑研究中心（以下简称“中心”）的人才战略，推行理论研究与工程实践相结合的理念，开展独立培养或与浙江大学相关学院联合培养硕士、博士研究生工作，支持学院导师参与联合培养，为研究生设立助学金、奖学金，奖励优秀成果，以加强科教融合和产教融合，支持学科建设和人才培养。</p>
+        <p>研究生培养总体依托相关学科，思政教育、学籍管理、学位授予纳入相关学院（系）和学位评定体系。</p>
+        <p>中心导师由浙江大学建筑设计研究院有限公司（以下简称“设计院”）资深的高级工程师及以上专业技术职务人员经相关学科认定后担任；学院教师担任第二导师的，通过中心校内兼聘给予教学津贴，同等条件下在中心申请项目时给予优先考虑。</p>
+        <p>所有研究生在中心均有独立办公位和配套设施，有机会参与重大工程项目设计、科学研究项目、国际学术交流和外出考察调研等活动。</p>
+        <p>中心导师独立培养和作为第一导师培养的研究生，都将获得中心额外发放的助学金；中心设立奖学金，每学年评审奖励一次；研究生发表论文、出版专著、申请发明专利和参加各种大型赛事、设计竞赛等活动，中心均给予补助和奖励。</p>
+        <p>表现优秀的研究生毕业后直接推荐到设计院工作，并优先参加设计院雏鹰计划的选拔；表现优秀的博士研究生优先推荐到设计院做博士后研究。</p>
+
+        <br>
+        <div align="center">
+            <!--<div class="text-center">
+                <button class="btn btn-secondary text-center" type="button" id="teacherInfo">中心导师简介</button>
+            </div>-->
+            <div class="text-center">
+                <button class="btn btn-secondary text-center m-2" type="button" id="jzInfo">建筑设计与建筑技术组</button>
+                <button class="btn btn-secondary text-center m-2" type="button" id="jgsbjInfo">岩土结构与土木水利（防灾、微环境）组</button>
+                <button class="btn btn-secondary text-center m-2" type="button" id="yljzInfo">园林与建筑组</button>
+                <button class="btn btn-secondary text-center m-2" type="button" id="jsjInfo">计算机组</button>
+            </div>
+
+            <div class="text-center">
+
+            </div>
+            <div class="text-center">
+
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </div>
+</div>
+
+
+<#include "/bottom.html">
+
+<#include "/footer.html">
+
+<script>
+    $(function () {
+
+        $("#jzInfo").click(function () {
+            let pdf = '${request.contextPath}/static/myfiles/建筑设计与建筑技术组.pdf';
+            window.open('${request.contextPath}/static/plugins/pdf/web/viewer.html?file=' + pdf, 'PDF');
+        });
+
+        $("#jgsbjInfo").click(function () {
+            let pdf = '${request.contextPath}/static/myfiles/岩土结构与土木水利（防灾、微环境）组.pdf';
+            window.open('${request.contextPath}/static/plugins/pdf/web/viewer.html?file=' + pdf, 'PDF');
+        });
+
+        $("#yljzInfo").click(function () {
+            let pdf = '${request.contextPath}/static/myfiles/园林与建筑组.pdf';
+            window.open('${request.contextPath}/static/plugins/pdf/web/viewer.html?file=' + pdf, 'PDF');
+        });
+
+        $("#jsjInfo").click(function () {
+            let pdf = '${request.contextPath}/static/myfiles/计算机组.pdf';
+            window.open('${request.contextPath}/static/plugins/pdf/web/viewer.html?file=' + pdf, 'PDF');
+        });
+
+    });
+</script>
+
+</body>
+</html>
