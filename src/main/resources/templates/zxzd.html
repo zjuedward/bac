@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>中心制度</title>
+    <#include "/header.html">
+
+</head>
+<body>
+<#include "/top.html">
+
+<!-- ##############################科研制度#################################-->
+<div class="container-fluid swimlane">
+    <div class="container">
+        <h4 class="text-black mt-0 font-weight-bold">中心制度<span class="text-muted ml-4">Center Institution</span></h4>
+        <hr align="left" class="divider my-4" style="border-color: #000000;">
+        <div id="" class="container m-0 p-0">
+            <div class="album py-1 bg-light">
+                <div class="">
+
+                    <div class="card mb-5" style="width: 100%;">
+                        <!--<div class="card-header">
+                        </div>-->
+                        <ul class="list-group list-group-flush text-left">
+                            <li class="list-group-item">
+                                <span class="pdfnews" style="cursor: pointer;">平衡中心发【2020】11号：中心研究生培养管理和奖励办法（试行）</span>
+                                <span class="float-right">2020年7月22日</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pdfnews" style="cursor: pointer;">平衡中心发【2020】10号：中心技术委员会名单</span>
+                                <span class="float-right">2020年7月2日</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pdfnews" style="cursor: pointer;">平衡中心发【2020】9号：中心科技成果知识产权与著作出版管理办法</span>
+                                <span class="float-right">2020年7月2日</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pdfnews" style="cursor: pointer;">平衡中心发【2020】8号：中心科研项目管理办法</span>
+                                <span class="float-right">2020年7月2日</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pdfnews" style="cursor: pointer;">平衡中心发【2020】7号：中心自主立项科研项目管理细则</span>
+                                <span class="float-right">2020年7月2日</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pdfnews" style="cursor: pointer;">平衡中心发【2020】6号：中心学术委员会名单</span>
+                                <span class="float-right">2020年6月22日</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pdfnews" style="cursor: pointer;">平衡中心发【2020】5号：中心人事管理办法（试行）</span>
+                                <span class="float-right">2020年6月22日</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pdfnews" style="cursor: pointer;">平衡中心发【2020】3号：中心落实“三重一大”制度实施办法（试行）</span>
+                                <span class="float-right">2020年6月22日</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pdfnews" style="cursor: pointer;">平衡中心发【2020】2号：中心章程</span>
+                                <span class="float-right">2020年6月22日</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pdfnews" style="cursor: pointer;">平衡中心发【2020】1号：中心科研和综合办负责人任命</span>
+                                <span class="float-right">2020年1月7日</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</div>
+
+
+<#include "/bottom.html">
+
+<#include "/footer.html">
+
+
+<script>
+    $(function () {
+
+        let pdfnews_path = [
+            "平衡中心发【2020】11号：中心研究生培养管理和奖励办法（试行）.pdf",
+            "平衡中心发【2020】10号：中心技术委员会名单.pdf",
+            "平衡中心发【2020】9号：中心科技成果知识产权与著作出版管理办法.pdf",
+            "平衡中心发【2020】8号：中心科研项目管理办法.pdf",
+            "平衡中心发【2020】7号：中心自主立项科研项目管理细则.pdf",
+            "平衡中心发【2020】6号：中心学术委员会名单.pdf",
+            "平衡中心发【2020】5号：中心人事管理办法（试行）.pdf",
+            "平衡中心发【2020】3号：中心落实“三重一大”制度实施办法（试行）.pdf",
+            "平衡中心发【2020】2号：中心章程.pdf",
+            "平衡中心发【2020】1号：中心科研和综合办负责人任命.pdf"
+        ];
+
+        $(".pdfnews").each(function (index) {
+            $(this).click(function () {
+                let pdf = '${request.contextPath}/static/myfiles/中心制度/' + pdfnews_path[index];
+                window.open('${request.contextPath}/static/plugins/pdf/web/viewer.html?file=' + pdf, 'PDF');
+            });
+        });
+
+        /*$("#one").click(function () {
+            let pdf = '${request.contextPath}/static/myfiles/中心制度/平衡中心发【2020】1号：科研和综合办负责人任命.pdf';
+            window.open('${request.contextPath}/static/plugins/pdf/web/viewer.html?file=' + pdf, 'PDF');
+        });
+
+        $("#two").click(function () {
+            let pdf = '${request.contextPath}/static/myfiles/中心制度/平衡中心发【2020】2号：中心章程.pdf';
+            window.open('${request.contextPath}/static/plugins/pdf/web/viewer.html?file=' + pdf, 'PDF');
+        });
+
+        $("#three").click(function () {
+            let pdf = '${request.contextPath}/static/myfiles/中心制度/平衡中心发【2020】3号：中心落实“三重一大”制度实施办法（试行）.pdf';
+            window.open('${request.contextPath}/static/plugins/pdf/web/viewer.html?file=' + pdf, 'PDF');
+        });
+
+        $("#four").click(function () {
+            let pdf = '${request.contextPath}/static/myfiles/中心制度/平衡中心发【2020】5号：中心人事管理办法（试行）.pdf';
+            window.open('${request.contextPath}/static/plugins/pdf/web/viewer.html?file=' + pdf, 'PDF');
+        });
+
+        $("#five").click(function () {
+            let pdf = '${request.contextPath}/static/myfiles/中心制度/平衡中心发【2020】6号：学术委员会名单.pdf';
+            window.open('${request.contextPath}/static/plugins/pdf/web/viewer.html?file=' + pdf, 'PDF');
+        });
+
+        $("#six").click(function () {
+            let pdf = '${request.contextPath}/static/myfiles/中心制度/平衡中心发【2020】10号：技术委员会名单.pdf';
+            window.open('${request.contextPath}/static/plugins/pdf/web/viewer.html?file=' + pdf, 'PDF');
+        });*/
+
+    });
+</script>
+
+
+</body>
+</html>
